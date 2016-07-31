@@ -1,0 +1,63 @@
+
+.card {
+	position: absolute;
+	display: inline-block;
+	width: 250px;
+	height: 450px;
+	border: 1px solid gray;
+}
+
+.card:nth-child(1) {
+	-ms-transform: rotate(-20deg) scale(0.6);/* IE 9 */
+	-webkit-transform: rotate(-20deg) scale(0.6);/* Safari */
+	transform: rotate(-20deg) scale(0.6);
+	left: 50%;
+	margin-left: -325px;
+	z-index: 1;
+	background: gray;
+}
+
+.card:nth-child(2) {
+	-ms-transform: rotate(-10deg) scale(0.8);/* IE 9 */
+	-webkit-transform: rotate(-10deg) scale(0.8);/* Safari */
+	transform: rotate(-10deg) scale(0.8);
+	left: 50%;
+	margin-left: -225px;
+	z-index: 3;
+	background-color: gray;
+}
+
+.card:nth-child(3) {
+	left: 50%;
+	margin-left: -125px;
+	z-index: 3;
+	background: gray;
+}
+
+.card:nth-child(4) {
+	-ms-transform: rotate(10deg) scale(0.8);/* IE 9 */
+	-webkit-transform: rotate(10deg) scale(0.8);/* Safari */
+	transform: rotate(10deg) scale(0.8);
+	right: 50%;
+	margin-right: -225px;
+	z-index: 2;
+	background: gray;
+}
+
+.card:nth-child(5) {
+	-ms-transform: rotate(20deg) scale(0.6);/* IE 9 */
+	-webkit-transform: rotate(20deg) scale(0.6);/* Safari */
+	transform: rotate(20deg) scale(0.6);
+	right: 50%;
+	margin-right: -325px;
+	z-index: 1;
+	background: gray;
+}
+
+.card:nth-child(3):hover {
+	z-index: 4;
+	-ms-transform: rotate(0) scale(1.1);/* IE 9 */
+	-webkit-transform: rotate(0) scale(1.1);/* Safari */
+	transform: rotate(0) scale(1.1);
+	transition: transform 0.5s;
+}
